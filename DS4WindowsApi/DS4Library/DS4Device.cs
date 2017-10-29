@@ -726,7 +726,7 @@ namespace DS4Windows
                     {
                         if (res == HidDevice.ReadStatus.WaitTimedOut)
                         {
-                            Log.LogToGui(Mac.ToString() + " disconnected due to timeout", true);
+                            //Log.LogToGui(Mac.ToString() + " disconnected due to timeout", true);
                         }
                         else
                         {
@@ -760,7 +760,7 @@ namespace DS4Windows
                     {
                         if (res == HidDevice.ReadStatus.WaitTimedOut)
                         {
-                            Log.LogToGui(Mac.ToString() + " disconnected due to timeout", true);
+                            //Log.LogToGui(Mac.ToString() + " disconnected due to timeout", true);
                         }
                         else
                         {
@@ -970,7 +970,7 @@ namespace DS4Windows
 
                     if (shouldDisconnect)
                     {
-                        Log.LogToGui(Mac.ToString() + " disconnecting due to idle disconnect", false);
+                        //Log.LogToGui(Mac.ToString() + " disconnecting due to idle disconnect", false);
 
                         if (conType == ConnectionType.BT)
                         {
