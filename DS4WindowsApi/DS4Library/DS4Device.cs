@@ -771,7 +771,7 @@ namespace DS4Windows
 
                         StopOutputUpdate();
                         isDisconnecting = true;
-                        uiContext.Send(new SendOrPostCallback(delegate (object state4)
+                        uiContext?.Send(new SendOrPostCallback(delegate (object state4)
                         {
                             Removal?.Invoke(this, EventArgs.Empty);
                         }), null);
